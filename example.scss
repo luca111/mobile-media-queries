@@ -1,0 +1,20 @@
+@import "media_queries";
+
+p {
+  // iPhone 5 and 5S, and phones with equal or smaller screen
+  @include iphone5 {
+    // insert styling here
+  }
+  // phones with screen size between the iPhone 5 and the iPhone 6
+  @include midPhone {
+    // insert styling here
+  }
+  // iPhone 6 and 6S
+  @include iphone6 {
+    // insert styling here
+  }
+  // iPhone 6 plus and 6S plus, and phones with equal or larger screen
+  @include iphone6plus {
+    // insert styling here
+  }
+}

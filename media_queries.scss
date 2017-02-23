@@ -1,0 +1,27 @@
+// iPhone 5 and 5S, and phones with equal or smaller screen
+@mixin iphone5 {
+  @media (max-device-width: 320px) {
+    @content;
+  }
+}
+
+// phones with screen size between the iPhone 5 and the iPhone 6
+@mixin midPhone {
+  @media (min-device-width: 321px) {
+    @content;
+  }
+}
+
+// iPhone 6 and 6S
+@mixin iphone6 {
+  @media (min-device-width: 375px) {
+    @content;
+  }
+}
+
+// iPhone 6 plus and 6S plus, and phones with equal or larger screen
+@mixin iphone6plus {
+  @media (min-device-width: 414px) {
+    @content;
+  }
+}
